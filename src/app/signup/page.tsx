@@ -11,8 +11,32 @@ export default function SignUp() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   
   return (
-    <div className="flex min-h-screen items-center justify-center p-4 bg-white">
-      <div className="w-full sm:w-[90%] md:w-[75%] lg:w-[60%] xl:w-[55%] rounded-3xl bg-white p-6 sm:p-8 md:p-10 shadow-sm mx-auto">
+    <div className="flex min-h-screen items-center justify-center p-4 bg-white relative overflow-hidden">
+      {/* Top right background image */}
+      <div className="absolute hidden md:block top-0 md:top-2 -right-[10%] sm:-right-[5%] w-[80%] sm:w-[70%] md:w-[60%] h-[40%] md:h-[50%] pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image 
+            src="/assets/bg_image.png" 
+            alt="Background decoration" 
+            fill
+            priority
+           
+          />
+        </div>
+      </div>
+
+      {/* Bottom left background image */}
+      <div className="absolute hidden  md:block bottom-0 md:bottom-5 -left-[20%] sm:-left-[15%] md:-left-[10%] w-[70%] sm:w-[60%] md:w-[52%] h-[45%] md:h-[55%] pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image 
+            src="/assets/bg_image.png" 
+            alt="Background decoration" 
+            fill
+            
+          />
+        </div>
+      </div>
+      <div className="w-full sm:w-[90%] md:w-[75%] lg:w-[60%] xl:w-[55%] rounded-3xl bg-white p-4 sm:p-6 md:p-8 lg:p-10 shadow-sm relative mx-auto my-6 md:m-12 z-10">
         <div className="mb-6 md:mb-8 text-center max-w-4xl mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h1 className="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-[#323232]">Create Account</h1>
           <p className="text-xs sm:text-sm text-[#545757]">
