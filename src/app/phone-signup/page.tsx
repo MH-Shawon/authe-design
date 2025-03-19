@@ -12,13 +12,7 @@ export default function PhoneSignUp() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   
   return (
-    <div className="flex min-h-screen items-center justify-center p-4 bg-white" 
-      style={{ 
-        backgroundImage: 'url("/assets/bg.png"), url("/assets/bg.png")', 
-        backgroundPosition: 'top right, bottom -300px left',
-        backgroundSize: '700px 600px', 
-        backgroundRepeat: 'no-repeat'
-      }}>
+    <div className="flex min-h-screen items-center justify-center p-4 bg-white">
       <div className="w-full sm:w-[90%] md:w-[75%] lg:w-[60%] xl:w-[55%] rounded-3xl bg-white p-6 sm:p-8 md:p-10 shadow-sm mx-auto">
         <div className="mb-6 md:mb-8 text-center max-w-4xl mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h1 className="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-[#323232]">Create Account</h1>
